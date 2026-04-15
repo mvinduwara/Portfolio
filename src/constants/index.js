@@ -139,16 +139,15 @@ const experiences = [
     ],
   },
   {
-    title: "Web Developer",
-    // company_name: "Shopify",
-    icon: shopify,
+    title: "Technology Stack & Tools",
+    icon: shopify, 
     iconBg: "#383E56",
-    date: "#003",
+    date: "Core Competencies",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Programming Languages: Proficient in PHP, Java, Python, JavaScript, and TypeScript.",
+      "Frontend Development: Building responsive UIs using ReactJS, HTML, CSS, SCSS, Bootstrap, and Tailwind.",
+      "Database Systems: Designing and managing data with MySQL and PostgreSQL.",
+      "Version Control: Managing codebases and collaborating using Git.",
     ],
   },
   {
