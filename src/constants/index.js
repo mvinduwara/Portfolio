@@ -171,46 +171,46 @@ const experiences = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Eco Cycle",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A comprehensive Android application designed for efficient waste management and collection. It features dedicated interfaces for sellers to post pickup requests and drivers to discover and accept jobs, supported by real-time Firebase notifications.",
+    tags: [
+      {
+        name: "java",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "retrofit",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: carrent,
+    source_code_link: "https://github.com/mvinduwara/Smart-Waste-Management",
+  },
+  {
+    name: "GT Automech ERP",
+    description:
+      "A comprehensive Enterprise Resource Planning (ERP) system tailored for automotive workshops. It streamlines garage operations with dedicated modules for inventory management, vehicle job cards, automated invoicing, and employee attendance tracking.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
+        name: "laravel",
+        color: "orange-text-gradient",
       },
       {
         name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/mvinduwara/GT-Automech-New",
   },
   {
     name: "Trip Guide",
