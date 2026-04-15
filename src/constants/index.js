@@ -116,16 +116,16 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
+    title: "BSc (Hons) Computer Science",
     // company_name: "Starbucks",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "#001",
+    date: "2022 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Reading for degree from the University of Westminster.",
+      "Studying at Informatics Institute of Technology (Sri Lanka).",
+      "Building a strong foundation in Java, Python, and PHP.",
+      "Developing backend systems, building CRUD systems, and integrating reporting tools.",
     ],
   },
   {
