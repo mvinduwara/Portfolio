@@ -15,6 +15,8 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
+  // Add state to track errors
+  const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
     const { target } = e;
@@ -24,10 +26,51 @@ const Contact = () => {
       ...form,
       [name]: value,
     });
+    
+    // Clear error for a specific field when the user starts typing again
+    if (errors[name]) {
+      setErrors({
+        ...errors,
+        [name]: "",
+      });
+    }
+  };
+
+  // Validation Logic
+  const validateForm = () => {
+    let formIsValid = true;
+    let newErrors = {};
+
+    if (!form.name.trim()) {
+      formIsValid = false;
+      newErrors.name = "Name is required.";
+    }
+
+    if (!form.email.trim()) {
+      formIsValid = false;
+      newErrors.email = "Email is required.";
+    } else if (!/\S+@\S+\.\S+/.test(form.email)) {
+      formIsValid = false;
+      newErrors.email = "Please enter a valid email address.";
+    }
+
+    if (!form.message.trim()) {
+      formIsValid = false;
+      newErrors.message = "Message cannot be empty.";
+    }
+
+    setErrors(newErrors);
+    return formIsValid;
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    
+    // Run validation before proceeding
+    if (!validateForm()) {
+      return;
+    }
+
     setLoading(true);
 
     emailjs
@@ -87,9 +130,14 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your good name?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none font-medium ${
+                errors.name ? 'border-2 border-red-500' : 'border-none'
+              }`}
             />
+            {/* Display name error */}
+            {errors.name && <span className='text-red-500 text-sm mt-2'>{errors.name}</span>}
           </label>
+          
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your email</span>
             <input
@@ -98,9 +146,14 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your web address?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none font-medium ${
+                errors.email ? 'border-2 border-red-500' : 'border-none'
+              }`}
             />
+            {/* Display email error */}
+            {errors.email && <span className='text-red-500 text-sm mt-2'>{errors.email}</span>}
           </label>
+          
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Message</span>
             <textarea
@@ -109,13 +162,17 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder='What you want to say?'
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none font-medium ${
+                errors.message ? 'border-2 border-red-500' : 'border-none'
+              }`}
             />
+            {/* Display message error */}
+            {errors.message && <span className='text-red-500 text-sm mt-2'>{errors.message}</span>}
           </label>
 
           <button
             type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-opacity-80 transition-all'
           >
             {loading ? "Sending..." : "Send"}
           </button>
