@@ -140,7 +140,7 @@ const experiences = [
   },
   {
     title: "Technology Stack & Tools",
-    icon: shopify, 
+    icon: shopify,
     iconBg: "#383E56",
     date: "Core Competencies",
     points: [
@@ -151,16 +151,16 @@ const experiences = [
     ],
   },
   {
-    title: "Full stack Developer",
-    // company_name: "Meta",
+    title: "Full stack Development",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "#004",
+    date: "Career Objective",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing and maintaining robust backend systems and RESTful APIs using Laravel and Node.js.",
+      "Building efficient, scalable CRUD applications and integrating comprehensive reporting tools.",
+      "Bridging the gap between frontend interfaces and server-side logic to create seamless user experiences.",
+      "Solving real-world problems through efficient code while actively expanding knowledge in DevOps and advanced server-side technologies.",
+      "Contact: dev.manilkavinduwara@gmail.com | +94 712739342 | Homagama, Sri Lanka",
     ],
   },
 ];
