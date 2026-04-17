@@ -15,7 +15,6 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
-  // Add state to track errors
   const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
@@ -27,7 +26,6 @@ const Contact = () => {
       [name]: value,
     });
     
-    // Clear error for a specific field when the user starts typing again
     if (errors[name]) {
       setErrors({
         ...errors,
@@ -36,7 +34,6 @@ const Contact = () => {
     }
   };
 
-  // Validation Logic
   const validateForm = () => {
     let formIsValid = true;
     let newErrors = {};
