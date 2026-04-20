@@ -17,7 +17,7 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState({});
 
-  const handleChange = (e) => {
+    const handleChange = (e) => {
     const { target } = e;
     const { name, value } = target;
 
@@ -25,7 +25,7 @@ const Contact = () => {
       ...form,
       [name]: value,
     });
-    
+
     if (errors[name]) {
       setErrors({
         ...errors,
@@ -62,7 +62,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     // Run validation before proceeding
     if (!validateForm()) {
       return;
@@ -127,14 +127,13 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your good name?"
-              className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none font-medium ${
-                errors.name ? 'border-2 border-red-500' : 'border-none'
-              }`}
+              className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none font-medium ${errors.name ? 'border-2 border-red-500' : 'border-none'
+                }`}
             />
             {/* Display name error */}
             {errors.name && <span className='text-red-500 text-sm mt-2'>{errors.name}</span>}
           </label>
-          
+
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your email</span>
             <input
@@ -143,14 +142,13 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your web address?"
-              className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none font-medium ${
-                errors.email ? 'border-2 border-red-500' : 'border-none'
-              }`}
+              className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none font-medium ${errors.email ? 'border-2 border-red-500' : 'border-none'
+                }`}
             />
             {/* Display email error */}
             {errors.email && <span className='text-red-500 text-sm mt-2'>{errors.email}</span>}
           </label>
-          
+
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Message</span>
             <textarea
@@ -159,9 +157,8 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder='What you want to say?'
-              className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none font-medium ${
-                errors.message ? 'border-2 border-red-500' : 'border-none'
-              }`}
+              className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none font-medium ${errors.message ? 'border-2 border-red-500' : 'border-none'
+                }`}
             />
             {/* Display message error */}
             {errors.message && <span className='text-red-500 text-sm mt-2'>{errors.message}</span>}
