@@ -63,7 +63,6 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Run validation before proceeding
     if (!validateForm()) {
       return;
     }
@@ -145,7 +144,6 @@ const Contact = () => {
               className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none font-medium ${errors.email ? 'border-2 border-red-500' : 'border-none'
                 }`}
             />
-            {/* Display email error */}
             {errors.email && <span className='text-red-500 text-sm mt-2'>{errors.email}</span>}
           </label>
 
@@ -160,7 +158,6 @@ const Contact = () => {
               className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none font-medium ${errors.message ? 'border-2 border-red-500' : 'border-none'
                 }`}
             />
-            {/* Display message error */}
             {errors.message && <span className='text-red-500 text-sm mt-2'>{errors.message}</span>}
           </label>
 
