@@ -42,11 +42,11 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Web Application Development",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "FrontEnd Developer",
     icon: mobile,
   },
   {
@@ -116,101 +116,97 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "BSc (Hons) Computer Science",
+    // company_name: "Starbucks",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "2022 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Reading for degree from the Birmingham City University.",
+      "Studying at Java Institute (Sri Lanka).",
+      "Building a strong foundation in Java, React and PHP.",
+      "Developing backend systems, building CRUD systems, and integrating reporting tools.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "GCE Advanced Level",
+    // company_name: "Tesla",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "2013/2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Completed secondary education at Mahinda Rajapaksha College Homagama.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: "Technology Stack & Tools",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Core Competencies",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Programming Languages: Proficient in PHP, Java, Python, JavaScript, and TypeScript.",
+      "Frontend Development: Building responsive UIs using ReactJS, HTML, CSS, SCSS, Bootstrap, and Tailwind.",
+      "Database Systems: Designing and managing data with MySQL and PostgreSQL.",
+      "Version Control: Managing codebases and collaborating using Git.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "About Me",
+    icon: meta, 
+    iconBg: "#383E56",
+    date: "Profile",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Name: Manilka Vinduwara",
+      "Degree: BSc (Hons) Software Engineering",
+      "Date of Birth: 2002/03/11 (Age: 24)",
+      "Contact: 0712739342",
+      "Email: dev.manilkavinduwara@gmail.com",
     ],
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Eco Cycle",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A comprehensive Android application designed for efficient waste management and collection. It features dedicated interfaces for sellers to post pickup requests and drivers to discover and accept jobs, supported by real-time Firebase notifications.",
+    tags: [
+      {
+        name: "java",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "retrofit",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: carrent,
+    source_code_link: "https://github.com/mvinduwara/Smart-Waste-Management",
+  },
+  {
+    name: "GT Automech ERP",
+    description:
+      "A comprehensive Enterprise Resource Planning (ERP) system tailored for automotive workshops. It streamlines garage operations with dedicated modules for inventory management, vehicle job cards, automated invoicing, and employee attendance tracking.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
+        name: "laravel",
+        color: "orange-text-gradient",
       },
       {
         name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/mvinduwara/GT-Automech-New",
   },
   {
     name: "Trip Guide",
