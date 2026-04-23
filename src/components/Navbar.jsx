@@ -85,8 +85,7 @@ const Navbar = () => {
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(nav.title);
-                  }}
-                >
+                  }}>
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
