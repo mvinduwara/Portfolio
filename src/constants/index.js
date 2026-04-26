@@ -209,25 +209,29 @@ const projects = [
     source_code_link: "https://github.com/mvinduwara/GT-Automech-New",
   },
   {
-    name: "Trip Guide",
+    name: "Gear 360 Controller",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A professional-grade Android application that interfaces with Samsung Gear 360 hardware. It features real-time MJPEG video streaming, 360° spherical VR media previewing, and remote hardware management via the OSC protocol.",
     tags: [
       {
-        name: "nextjs",
+        name: "java",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "retrofit",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "google-vr",
         color: "pink-text-gradient",
       },
+      {
+        name: "android-xml",
+        color: "orange-text-gradient",
+      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: tripguide, 
+    source_code_link: "https://github.com/mvinduwara/gear-360",
   },
 ];
 
