@@ -19,11 +19,12 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24  # Updated to Node 24 to fix the warning
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        # Added --legacy-peer-deps to fix the "Exit Code 1" error
+        run: npm install --legacy-peer-deps
 
       - name: Build
         run: npm run build
